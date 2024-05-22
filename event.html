@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" id="dark-stylesheet" disabled />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <div class="img-container">
+        <div class="logo">
+          <img src="images/events.png" alt="Left Image" />
+        </div>
+      </div>
+      <div class="menu">
+        <a href="index.html" id="homeLink">Home</a>
+        <a href="menu.html" id="menuLink">Menu</a>
+        <a href="gallary.html" id="galleryLink">Gallery</a>
+        <a href="event.html" id="eventsLink">Events</a>
+        <a href="#" id="darkModeSwitch" onclick="toggleDarkMode()">
+          <i class="fa-solid fa-moon"></i>
+        </a>
+      </div>
+    </header>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="left-side">
+          <div class="video-container">
+            <div style="max-width: 100%; overflow: hidden">
+              <video
+                src="images/Vid/SJM STUDIOS - Cinematic Coffee B Roll - Sony A7S III + 16-35mm F4.webm"
+                poster="images/tea/mainlogo.png" 
+                frameborder="0"
+                allowfullscreen
+                muted
+                controls
+                style="width: 100%; height: 500px"
+              ></video>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <form action="mailto:Pxprgk@inf.elte.hu" method="post">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name" name="name" required />
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your Address" name="address" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" name="email" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" placeholder="+9 (123) 1234" id="phone" name="phone" required />
+            <label for="gender">Gender:</label>
+            <div class="radio-btn">
+              <input class="rdo-btn" type="radio" id="male" name="gender" value="male" checked />
+              <label for="male">Male</label>
+              <input class="rdo-btn" type="radio" id="female" name="gender" value="female" /> 
+              <label for="female">Female</label>
+              <input
+                class="rdo-btn"
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+              />
+              <label for="other">Other</label>
+            </div>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Type your Message Here..." name="message" rows="4" required></textarea>
+            <div class="agree">
+              <input class="agr-btn" type="checkbox" id="agree" name="agree" required />
+              <label for="agree">I agree to the terms and conditions:</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <h2 class="center-heading">Welcome to Quetta Chai Café</h2>
+      <div class="content">
+        <p>
+          Experience the rich tradition and warmth of Quetta Chai Café, where each cup of chai is brewed to perfection, capturing the essence of Pakistani hospitality and culture. Our meticulously crafted chai blends are a symphony of flavors, designed to tantalize your taste buds and evoke a sense of nostalgia.
+        </p>
+        <p>
+          Nestled in the heart of Quetta, our café offers a serene escape from the bustling city life, inviting you to unwind and savor every sip amidst cozy surroundings and friendly faces. Whether you're a chai aficionado or new to the world of tea, Quetta Chai Café promises an unforgettable experience that will leave you craving for more.
+        </p>
+      </div>
+    </div>
+
+    <div class="table-data">
+      <table>
+        <caption>
+          <strong>Working Times</strong>
+          <details>
+            <summary>Summary</summary>
+            <p>In this table you will find the following rows: Week Days, Weekends, and Special Days timings.</p>
+          </details>
+        </caption>
+        <tr>
+          <th>Working Times</th>
+        </tr>
+        <tr>
+          <td>Week Days: 6 AM to 6 PM</td>
+        </tr>
+        <tr>
+          <td>Weekends: 9 AM to 9 PM</td>
+        </tr>
+        <tr>
+          <td>Full Day on Special Days</td>
+        </tr>
+      </table>
+    </div>
+    <div class="rating-part">
+      <ul>
+        <li>Peoples Reviews (1)</li>
+        <li>
+          <img src="images/tea/startfull.png" alt="" width="20px" />
+        </li>
+        <li><img src="images/tea/staremp.png" alt="" /></li>
+        <li><img src="images/tea/staremp.png" alt="" /></li>
+        <li><img src="images/tea/staremp.png" alt="" /></li>
+        <li><img src="images/tea/staremp.png" alt="" /></li>
+      </ul>
+    </div>
+    <footer class="foot">
+      <div class="footer-center">
+        <p>
+          Stay in the loop with the latest updates and exclusive offers by
+          connecting with us! Be the first to know about exciting promotions,
+          new releases, and special deals. Join our community today to unlock a
+          world of benefits and stay informed about all things related to our
+          products and services. Don't miss out – connect with us now!
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <p>Contact us on social media:</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.menu a {
+  color: #fff;
+}
+
+a{
+    color: #fff;
+}
+
+.table-container {
+    color: #222;
+}
+
+.faq-section, .blog-section, .job-form-section, .reservation-form-section {
+    color: #efeaea;
+    background-color: #222;
+}
+
+

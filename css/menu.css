@@ -1,0 +1,110 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  background-color: rgb(210, 210, 210);
+}
+
+.logo img {
+  max-width: 230px; /* Adjust this value as needed */
+  height: auto;
+}
+
+/* For smaller devices, you might want to reduce the size further */
+@media screen and (max-width: 768px) {
+  .logo img {
+    max-width: 80px; /* Adjust this value for smaller devices */
+  }
+}
+
+
+.container {
+  display: flex;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container th {
+  font-weight: bold;
+}
+
+
+.first-div {
+  width: 47%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.table-container {
+  height: 400px;
+  overflow: auto;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.second-div {
+  width: 50%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-div img {
+  width: 100%;
+  max-height: 90%;
+}
+
+.content {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .first-div,
+  .second-div {
+    width: 100%;
+  }
+
+  .second-div img {
+    max-height: none;
+  }
+}
